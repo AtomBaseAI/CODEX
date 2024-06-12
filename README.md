@@ -1,22 +1,6 @@
-# CodeBox
+# Codex
 
-> API is still under early stages of development, so feel free to contribute in the project.
 
-### Introducing the new CodeBox API
-
-An API which executes codes
-
-### Hosted here - "https://code-box.onrender.com/api/v1/"
-
-## Info
-
-This version is not scaled, you can access the scaled version here - "https://github.com/kushagra-goyal-14/CodeBox"
-
-### Execute Code and fetch output
-
-#### `POST` /
-
-This endpoint allows you to execute your script and fetch output results.
 
 ### Inputs required for API call -
 
@@ -40,7 +24,7 @@ All the Languages are listed below .
 
 ### On Postman : `(recommended)`
 
-Sending a json post request to `https://code-box.onrender.com/api/v1/submit`
+Sending a json post request to `https://atomlabs.com/api/v1/submit`
 
 ### It is a c++ script to print Hello World.
 
