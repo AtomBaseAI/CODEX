@@ -9,8 +9,10 @@ server.use(cors());
 server.use("/api", v1route);
 
 const startAndcreateServer = async () => {
-  server.listen(80, () => {
-    console.log(`Server started at port ${80}`);
+  const port = process.env.PORT || 8080;  
+  server.listen(port, () => {
+    console.log(`Server started at port ${port}`);
   });
 };
+
 startAndcreateServer();

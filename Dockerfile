@@ -12,18 +12,17 @@ RUN apt-get -y install gcc mono-mcs golang-go \
     python3-pip python3 curl && \
     rm -rf /var/lib/apt/lists/*
 
-
-
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash 
 RUN apt-get install nodejs -y
-
 
 COPY . /app
 WORKDIR /app
 
-EXPOSE 80
+EXPOSE 8080  # Expose port 8080
 
 RUN npm install
 RUN mkdir temp
+
+ENV PORT 8080  # Set the environment variable for the port
 
 CMD ["npm", "start"]
