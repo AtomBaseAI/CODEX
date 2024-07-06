@@ -21,7 +21,7 @@ RUN apt-get install nodejs -y
 COPY . /app
 WORKDIR /app
 
-EXPOSE 3300
+EXPOSE 80
 
 RUN npm install
 RUN mkdir temp
