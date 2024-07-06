@@ -18,11 +18,11 @@ RUN apt-get install nodejs -y
 COPY . /app
 WORKDIR /app
 
-EXPOSE 8080  # Expose port 8080
+EXPOSE 8080 
 
 RUN npm install
 RUN mkdir temp
 
-ENV PORT 8080  # Set the environment variable for the port
+ENV PORT 8080
 
 CMD ["npm", "start"]
