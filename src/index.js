@@ -9,8 +9,8 @@ server.use(cors());
 server.use("/api", v1route);
 
 const startAndcreateServer = async () => {
-  server.listen(PORT || 3300, () => {
-    console.log(`Server started at port ${PORT || 3300}`);
+  server.listen(80, () => {
+    console.log(`Server started at port ${80}`);
   });
 };
 startAndcreateServer();
